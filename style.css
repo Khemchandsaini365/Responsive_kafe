@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    width: 100vw;
+    background-color: aqua;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+#box-2 {
+    width: 60%;
+}
+
+.bar {
+    display: none;
+}
+
+@media (max-width:800px) {
+    .bar {
+        display: block;
+        position: relative;
+        right: -90%;
+        font-size: 25px;
+    }
+
+    #box-2 ul {
+        display: none;
+    }
+}
+
+.carousel {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+#slider-1 {
+    background: url(./images/top-left-bg.jpg);
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider-2 {
+    width: 68%;
+}
+
+#slider-2 img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:900px) {
+    .carousel {
+        display: block;
+        width: 100vw;
+
+    }
+
+    #slider-1 {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+    #slider-2 {
+        width: 100%;
+        height: 50vh;
+
+    }
+
+}
+
+#about {
+    display: flex;
+    margin: 100px 10%;
+}
+
+.about_left {
+    width: 50%;
+    height: 100%;
+}
+
+.img_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_row img {
+    width: 30%;
+}
+
+.about_right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_right img {
+    width: 85%;
+}
+
+@media (max-width:900px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_left {
+        width: 100%;
+        padding: 8%;
+    }
+
+    .about_right {
+        width: 100%;
+    }
+}
+
+.foods {
+    display: flex;
+    margin: 3% 9%;
+}
+
+.menu_heading {
+    margin: 2% 10%;
+}
+
+.menu_imgs {
+    background-color: blue;
+    margin: 0 10px;
+}
+
+.menu_imgs img {
+    width: 100%;
+}
+
+@media (max-width:400px) {
+    .foods {
+        display: block;
+        margin: 2% 9%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .menu_imgs {
+        background-color: blue;
+        margin: 0 10px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .menu_imgs img {
+        width: 100%;
+    }
+}
+
+#our_chefs {
+    margin: 5% 5%;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.chefs {
+    border: 2px solid gray;
+    text-align: center;
+}
+
+@media (max-width:1000px) {
+    #our_chefs {
+        border: 2px solid black;
+        margin: 5% 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        box-sizing: border-box;
+        overflow: auto;
+        width: 80vw;
+    }
+
+    .chefs>img {
+        width: 100%;
+    }
+
+    .chefs {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        background-color: blanchedalmond;
+    }
+}
+.reservation_form{
+    background: url(./images/reservation-bg.jpg);
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    
+}
+
+#box_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 6%;
+    width: 50%;
+    color: white;
+}
+#down{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#box_2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3% 5%;
+    height: 100%;
+}
+#box_2>form>input{
+    height: 2em;
+    width: 42em;
+}
+.phone{
+    background-color: white;
+    border-radius: 8px;
+    width: 45%;
+    height: 120%;
+    padding: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: black;
+    top: 0;
+    left: 0;
+}
+.phone a{
+    color: black;
+}
+.phone>div{
+    background-color: tomato;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 40%;
+    top: -20%;
+}
+.phone>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone i{
+font-size: 25px;
+}
+.in_box{
+    background-color: white;
+    height: 100%;
+    width: 110%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#box_2>form>div{
+    display: flex;
+    justify-content: center;
+}
+#first{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+#first input{
+    height: 50%;
+    width: 49%;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid gray;
+}
+textarea{
+    border-radius: 5px;
+}
+textarea::placeholder{
+    padding-left: 5%;
+    font-size: 18px;
+}
+#first input::placeholder{
+    padding-left:30px;
+    outline: none;
+    border: none;
+}
+#first select::placeholder{
+    
+}
+#first select{
+    padding-left:30px;
+    appearance: none;
+    height: 50%;
+    width: 49%;
+    border-radius: 5px;
+    outline: none;
+    color: grey;
+}
+#second{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5%;
+}
+.btn_2{
+    height: 25%;
+    background-color: tomato;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+}
+@media (max-width:1000px) {
+    .reservation_form{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        overflow: hidden;
+        object-fit: cover;
+        height: auto;
+    }
+    #box_1{
+        width: 100%;
+        position: relative;
+        top: 40%;
+    }#first{
+        padding-bottom: 0;
+
+    }
+    #down{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone{
+        width: 100%;
+        margin: 20px;
+    }    
+    .phone>div{
+        left: 45%;
+    }
+    #box_2{
+        width: 90%;
+    }
+    #first input{
+        height: 50px;
+        width: 49%;
+        border-radius: 5px;
+        outline: none;
+        border: 1px solid gray;
+    }
+    textarea{
+        border-radius: 5px;
+    }
+    textarea::placeholder{
+        padding-left: 5%;
+        font-size: 18px;
+    }
+    #first input::placeholder{
+        padding-left:30px;
+        outline: none;
+        border: none;
+    }
+    #first select::placeholder{
+        
+    }
+    #first select{
+        padding-left:30px;
+        appearance: none;
+        height: 50px;
+        width: 49%;
+        border-radius: 5px;
+        outline: none;
+        color: grey;
+    }
+    #second{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 0;
+    }
+}
+@media (max-width:650px) {
+    #second{
+        width: 54%;
+        position: relative;
+        left: 23%;
+
+    }
+}
