@@ -236,6 +236,7 @@ header ul {
         margin: 0 10px;
         width: 100%;
         flex-wrap: wrap;
+        margin: 5% 0;
     }
 
     .menu_imgs img {
