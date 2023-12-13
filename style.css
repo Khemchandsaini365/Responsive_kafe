@@ -656,7 +656,7 @@ textarea::placeholder {
         padding: 2% 4%;
         gap: 10px;
         background-color: tomato;
-        height: 70vh;
+        height: 50vh;
     }
     #itm_3 p{
         text-align: center;
